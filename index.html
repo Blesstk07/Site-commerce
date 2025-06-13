@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>King Jersey</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">King Jersey</h1>
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Vareuses</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Menu Burger -->
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Les Meilleures Vareuses de Foot</h2>
+      <p>Découvre notre collection unique de vareuses, pour les fans de foot du monde entier !</p>
+      <a href="produits.html" class="btn">Voir les Vareuses</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>Bienvenue chez King Jersey</h2>
+    <p>Nous sommes passionnés de football et de style. Ici, tu trouveras les dernières vareuses des plus grands clubs et sélections. Qualité garantie, prix imbattables.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 King Jersey - Tous droits réservés</p>
+  </footer>
+
+  <!-- JavaScript Menu Burger -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

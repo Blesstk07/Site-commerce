@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - King Jersey</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">King Jersey</h1>
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Vareuses</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Menu Burger -->
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section class="contact">
+    <h2>Nous contacter</h2>
+    <p>Tu as une question ? Envoie-nous un message !</p>
+    
+    <form action="#" method="post">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 King Jersey - Tous droits réservés</p>
+  </footer>
+
+  <!-- JavaScript pour le menu burger -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
